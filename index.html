@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض اللابتوبات</title>
+    <!-- تصميم Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Cairo', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- الهيدر (الشريط العلوي) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600"><i class="fa-solid fa-laptop ml-2"></i> متجر اللابتوبات</h1>
+            <div class="flex items-center gap-4">
+                <!-- رابط صفحتك على الفيسبوك -->
+                <a href="https://facebook.com/YOUR_PROFILE" target="_blank" class="text-blue-600 hover:text-blue-800 text-xl" title="فيسبوك">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <!-- زر دخول الآدمي -->
+                <a href="admin.html" class="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-700 transition">دخول الآدمي</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي (عرض الأجهزة) -->
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-xl font-bold mb-6 border-r-4 border-blue-600 pr-3">الأجهزة المتوفرة حالياً</h2>
+        
+        <!-- حالة التحميل -->
+        <div id="loading" class="text-center py-12">
+            <i class="fa-solid fa-spinner fa-spin text-4xl text-blue-600"></i>
+            <p class="mt-2 text-gray-500">جاري تحميل الأجهزة...</p>
+        </div>
+
+        <!-- شبكة عرض الأجهزة -->
+        <div id="laptops-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="bg-white border-t mt-12 py-6 text-center text-gray-500 text-sm">
+        جميع الحقوق محفوظة &copy; 2026
+    </footer>
+
+    <!-- جافاسكريبت التشغيل -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
